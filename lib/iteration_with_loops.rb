@@ -9,7 +9,7 @@ def join_nested_strings(src)
     element_index = 0 
     while element_index < src[inner_arrays].length do
    if src[inner_arrays][element_index].class == String
-     src[inner_arrays].delete(src[inner_arrays][element_index])
+     combined_strings_array << src[inner_arrays][element_index]
    end
      element_index += 1 
    end
