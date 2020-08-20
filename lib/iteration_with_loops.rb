@@ -8,7 +8,7 @@ def join_nested_strings(src)
   while inner_arrays < src.length do
     element_index = 0 
     while element_index < src[inner_arrays].length do
-   if src[inner_arrays][element_index] > 0 
+   if src[inner_arrays][element_index].class == String
      src[inner_arrays].delete(src[inner_arrays][element_index])
    else
     combined_strings_array  << src[inner_arrays][element_index]
